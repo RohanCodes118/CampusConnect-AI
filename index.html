@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect AI — Your Next Opportunity Starts Here.</title>
+  <meta name="description"
+    content="CampusConnect AI matches college students to hackathons, internships, workshops and communities that fit their skills and goals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <circle cx="15" cy="15" r="13" stroke="currentColor" stroke-width="1.6" />
+            <circle cx="15" cy="15" r="3.2" fill="currentColor" />
+            <path d="M15 2v6.5M15 21.5V28M28 15h-6.5M8.5 15H2" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="brand-word">CampusConnect<em>AI</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="navlink">Home</a>
+        <a href="#opportunities" class="navlink">Opportunities</a>
+        <a href="#how" class="navlink">How It Works</a>
+        <a href="#dashboard" class="navlink">Dashboard</a>
+        <a href="#features" class="navlink">Features</a>
+        <a href="#about" class="navlink">About</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#get-started" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="navlink">Home</a>
+      <a href="#opportunities" class="navlink">Opportunities</a>
+      <a href="#how" class="navlink">How It Works</a>
+      <a href="#dashboard" class="navlink">Dashboard</a>
+      <a href="#features" class="navlink">Features</a>
+      <a href="#about" class="navlink">About</a>
+      <a href="#get-started" class="btn btn-primary" style="margin-top:8px;">Get Started</a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Interactive prototype · AI-powered matching demo</p>
+        <h1 class="hero-title">Discover opportunities<br>built for <span class="hl">your future.</span></h1>
+        <p class="hero-sub">CampusConnect AI helps students discover internships, hackathons, workshops, events and
+          communities that match their skills, interests and career goals — instead of scrolling ten group chats to find
+          them.</p>
+        <div class="hero-actions">
+          <a href="#opportunities" class="btn btn-primary btn-lg">Explore Opportunities</a>
+          <button type="button" id="heroAIBtn" class="btn btn-ghost-dark btn-lg">Get AI Recommendations →</button>
+        </div>
+        <div class="hero-proof">
+          <div class="avatars" aria-hidden="true">
+            <span style="background:#D7FF4E"></span>
+            <span style="background:#FF6452"></span>
+            <span style="background:#8CE0EF"></span>
+            <span style="background:#F6F4EC"></span>
+          </div>
+          <p>Joined by 10,000+ students across 120 campuses</p>
+        </div>
+      </div>
+
+      <div class="hero-visual" role="img"
+        aria-label="AI dashboard preview scanning student profile and returning matched opportunities">
+        <div class="scan-panel">
+          <div class="scan-panel-head">
+            <span class="scan-dot"></span>
+            <span class="scan-dot"></span>
+            <span class="scan-dot"></span>
+            <p>match_engine.live</p>
+          </div>
+          <div class="scan-panel-body">
+            <p class="scan-label">SCANNING PROFILE</p>
+            <div class="scan-chips">
+              <span>Python</span><span>UI/UX</span><span>Web Dev</span><span>AI/ML</span>
+            </div>
+            <div class="scan-beam" aria-hidden="true"></div>
+
+            <div class="match-row" style="--d:0s">
+              <div class="match-info">
+                <p>AI Innovation Hackathon</p><span>Hackathon</span>
+              </div>
+              <div class="match-score">
+                <div class="match-bar"><i style="--val:98%"></i></div><b>98%</b>
+              </div>
+            </div>
+            <div class="match-row" style="--d:.15s">
+              <div class="match-info">
+                <p>Machine Learning Internship</p><span>Internship</span>
+              </div>
+              <div class="match-score">
+                <div class="match-bar"><i style="--val:94%"></i></div><b>94%</b>
+              </div>
+            </div>
+            <div class="match-row" style="--d:.3s">
+              <div class="match-info">
+                <p>Startup Bootcamp</p><span>Program</span>
+              </div>
+              <div class="match-score">
+                <div class="match-bar"><i style="--val:89%"></i></div><b>89%</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="visual-tag tag-1">⚡ New match found</div>
+        <div class="visual-tag tag-2">🎯 3 deadlines this week</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED OPPORTUNITIES ===================== -->
+  <section class="section section-paper" id="opportunities">
+    <div class="section-inner">
+      <p class="section-eyebrow">01 — The board</p>
+      <h2 class="section-title">Featured opportunities</h2>
+      <p class="section-sub">A curated cut of demo opportunities. Pinned, sorted and ready to claim — just like the
+        board outside your department office, minus the thumbtacks.</p>
+
+      <div class="filters" id="filters" role="tablist" aria-label="Filter opportunities">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="hackathon" role="tab" aria-selected="false">Hackathons</button>
+        <button class="filter-btn" data-filter="internship" role="tab" aria-selected="false">Internships</button>
+        <button class="filter-btn" data-filter="workshop" role="tab" aria-selected="false">Workshops</button>
+        <button class="filter-btn" data-filter="event" role="tab" aria-selected="false">Events</button>
+      </div>
+
+      <div class="ticket-grid" id="ticketGrid">
+        <!-- Ticket cards injected/visible; also present statically for no-JS -->
+        <article class="ticket" data-cat="hackathon" data-id="hack-ai">
+          <div class="ticket-top">
+            <span class="ticket-cat">Hackathon</span>
+            <span class="ticket-deadline">Closes Sep 14</span>
+          </div>
+          <h3>AI Innovation Hackathon</h3>
+          <p>36 hours to build an AI tool that solves a real campus problem. Mentors from three startups on the floor.
+          </p>
+          <div class="ticket-tags"><span>Python</span><span>AI/ML</span><span>Teams of 4</span></div>
+          <div class="ticket-stub"></div>
+          <div class="ticket-bottom">
+            <span class="ticket-loc">Bengaluru · Hybrid</span>
+            <div class="ticket-actions">
+              <button class="ticket-save" data-id="hack-ai" aria-pressed="false"
+                aria-label="Save AI Innovation Hackathon">
+                <span aria-hidden="true">☆</span>
+              </button>
+              <button type="button" class="ticket-cta" data-id="hack-ai">View details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ticket" data-cat="internship" data-id="intern-frontend">
+          <div class="ticket-top">
+            <span class="ticket-cat">Internship</span>
+            <span class="ticket-deadline">Closes Sep 20</span>
+          </div>
+          <h3>Frontend Development Internship</h3>
+          <p>8-week paid internship building production UI at a Series-A fintech. React-heavy stack, real users.</p>
+          <div class="ticket-tags"><span>React</span><span>CSS</span><span>Remote</span></div>
+          <div class="ticket-stub"></div>
+          <div class="ticket-bottom">
+            <span class="ticket-loc">Remote · Paid</span>
+            <div class="ticket-actions">
+              <button class="ticket-save" data-id="intern-frontend" aria-pressed="false"
+                aria-label="Save Frontend Development Internship">
+                <span aria-hidden="true">☆</span>
+              </button>
+              <button type="button" class="ticket-cta" data-id="intern-frontend">View details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ticket" data-cat="event" data-id="event-startup">
+          <div class="ticket-top">
+            <span class="ticket-cat">Event</span>
+            <span class="ticket-deadline">Closes Oct 02</span>
+          </div>
+          <h3>Startup &amp; Entrepreneurship Summit</h3>
+          <p>A day of founder talks, pitch practice and a speed-networking round with early-stage investors.</p>
+          <div class="ticket-tags"><span>Pitching</span><span>Networking</span><span>All majors</span></div>
+          <div class="ticket-stub"></div>
+          <div class="ticket-bottom">
+            <span class="ticket-loc">Bengaluru · In-person</span>
+            <div class="ticket-actions">
+              <button class="ticket-save" data-id="event-startup" aria-pressed="false"
+                aria-label="Save Startup and Entrepreneurship Summit">
+                <span aria-hidden="true">☆</span>
+              </button>
+              <button type="button" class="ticket-cta" data-id="event-startup">View details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ticket" data-cat="workshop" data-id="workshop-genai">
+          <div class="ticket-top">
+            <span class="ticket-cat">Workshop</span>
+            <span class="ticket-deadline">Closes Sep 08</span>
+          </div>
+          <h3>Generative AI Workshop</h3>
+          <p>Hands-on session on building with LLMs — prompting, embeddings, and shipping a small RAG app.</p>
+          <div class="ticket-tags"><span>LLMs</span><span>Python</span><span>Beginner OK</span></div>
+          <div class="ticket-stub"></div>
+          <div class="ticket-bottom">
+            <span class="ticket-loc">Online · Free</span>
+            <div class="ticket-actions">
+              <button class="ticket-save" data-id="workshop-genai" aria-pressed="false"
+                aria-label="Save Generative AI Workshop">
+                <span aria-hidden="true">☆</span>
+              </button>
+              <button type="button" class="ticket-cta" data-id="workshop-genai">View details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ticket" data-cat="hackathon" data-id="challenge-uiux">
+          <div class="ticket-top">
+            <span class="ticket-cat">Challenge</span>
+            <span class="ticket-deadline">Closes Sep 28</span>
+          </div>
+          <h3>UI/UX Design Challenge</h3>
+          <p>Redesign a real nonprofit's product flow in one week. Top 3 get reviewed live by a design panel.</p>
+          <div class="ticket-tags"><span>Figma</span><span>UX Research</span><span>Solo</span></div>
+          <div class="ticket-stub"></div>
+          <div class="ticket-bottom">
+            <span class="ticket-loc">Remote · Solo</span>
+            <div class="ticket-actions">
+              <button class="ticket-save" data-id="challenge-uiux" aria-pressed="false"
+                aria-label="Save UI/UX Design Challenge">
+                <span aria-hidden="true">☆</span>
+              </button>
+              <button type="button" class="ticket-cta" data-id="challenge-uiux">View details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ticket" data-cat="event" data-id="community-oss">
+          <div class="ticket-top">
+            <span class="ticket-cat">Community</span>
+            <span class="ticket-deadline">Rolling admission</span>
+          </div>
+          <h3>Open Source Community Program</h3>
+          <p>A 6-week cohort pairing you with a maintainer to land your first real pull requests.</p>
+          <div class="ticket-tags"><span>Git</span><span>Any language</span><span>Mentored</span></div>
+          <div class="ticket-stub"></div>
+          <div class="ticket-bottom">
+            <span class="ticket-loc">Remote · Cohort</span>
+            <div class="ticket-actions">
+              <button class="ticket-save" data-id="community-oss" aria-pressed="false"
+                aria-label="Save Open Source Community Program">
+                <span aria-hidden="true">☆</span>
+              </button>
+              <button type="button" class="ticket-cta" data-id="community-oss">View details →</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" id="emptyState" hidden>Nothing in this lane right now — check back soon or browse another
+        category.</p>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="section section-ink" id="how">
+    <div class="section-inner">
+      <p class="section-eyebrow section-eyebrow-light">02 — The process</p>
+      <h2 class="section-title section-title-light">How CampusConnect AI works</h2>
+      <p class="section-sub section-sub-light">Four steps between "I have no idea what to apply to" and a shortlist
+        worth your time.</p>
+
+      <div class="steps">
+        <div class="step-line" aria-hidden="true"></div>
+
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Create your profile</h3>
+          <p>Add your skills, interests and where you want your career to go. Takes about two minutes — no essay
+            required.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>AI understands you</h3>
+          <p>Our simulated matching engine compares your profile against the demo opportunity board, weighing skill
+            fit, deadlines and past interests.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Get smart recommendations</h3>
+          <p>A ranked feed appears — highest-fit opportunities first, with a plain-language reason for every match.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <h3>Apply and track</h3>
+          <p>Save what's interesting, apply where it counts, and let deadline reminders do the remembering for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AI MATCHING ===================== -->
+  <section class="section section-paper" id="ai-matching">
+    <div class="section-inner ai-inner">
+      <div class="ai-copy">
+        <p class="section-eyebrow">03 — The engine</p>
+        <h2 class="section-title">Opportunities that match you.</h2>
+        <p class="section-sub">Select your skills, interests, goal and experience level below — every listing gets
+          scored against your profile in real time. No generic "recommended for you."</p>
+
+        <form class="matcher-form" id="matcherForm" novalidate>
+          <div class="matcher-group">
+            <p class="matcher-label" id="skillChipsLabel">Skills</p>
+            <div class="chip-select" id="skillChips" role="group" aria-labelledby="skillChipsLabel"></div>
+          </div>
+
+          <div class="matcher-group">
+            <p class="matcher-label" id="interestChipsLabel">Interests</p>
+            <div class="chip-select" id="interestChips" role="group" aria-labelledby="interestChipsLabel"></div>
+          </div>
+
+          <div class="matcher-row">
+            <div class="matcher-group">
+              <label class="matcher-label" for="goalSelect">Career goal</label>
+              <select id="goalSelect" class="matcher-select">
+                <option value="software-engineer">Software Engineer</option>
+                <option value="ai-researcher">AI / ML Researcher</option>
+                <option value="product-designer">Product Designer</option>
+                <option value="founder">Entrepreneur / Founder</option>
+                <option value="analyst">Business Analyst / Consultant</option>
+              </select>
+            </div>
+            <div class="matcher-group">
+              <label class="matcher-label" for="levelSelect">Experience level</label>
+              <select id="levelSelect" class="matcher-select">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate" selected>Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="matcher-actions">
+            <button type="submit" class="btn btn-primary btn-lg matcher-submit" id="findMatchesBtn">Find My
+              Matches</button>
+            <button type="button" class="matcher-guided-link" id="guidedSetupBtn">Prefer a guided walkthrough? Try the
+              3-step onboarding →</button>
+          </div>
+          <p class="matcher-hint" id="matcherHint" hidden>Tip: select a few skills or interests above for sharper
+            matches.</p>
+        </form>
+
+        <ul class="engine-notes">
+          <li><span>01</span>Every listing is re-scored the moment your profile changes.</li>
+          <li><span>02</span>Scores are explainable — you see the exact skills behind each number.</li>
+          <li><span>03</span>Nothing is boosted by who's paying. Fit decides the order.</li>
+        </ul>
+      </div>
+
+      <div class="ai-visual" id="aiVisualPanel" aria-live="polite">
+        <div class="match-card" data-target="98">
+          <div class="match-card-head">
+            <p>AI Hackathon</p>
+            <b class="match-pct">0%</b>
+          </div>
+          <div class="match-track"><i class="match-fill"></i></div>
+          <p class="match-why">Matched on: Python, AI/ML</p>
+        </div>
+        <div class="match-card" data-target="94">
+          <div class="match-card-head">
+            <p>Machine Learning Internship</p>
+            <b class="match-pct">0%</b>
+          </div>
+          <div class="match-track"><i class="match-fill"></i></div>
+          <p class="match-why">Matched on: Python, AI/ML, Web Dev</p>
+        </div>
+        <div class="match-card" data-target="89">
+          <div class="match-card-head">
+            <p>Startup Bootcamp</p>
+            <b class="match-pct">0%</b>
+          </div>
+          <div class="match-track"><i class="match-fill"></i></div>
+          <p class="match-why">Matched on: Entrepreneurship, UI/UX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DASHBOARD ===================== -->
+  <section class="section section-paper dashboard-section" id="dashboard">
+    <div class="section-inner">
+      <p class="section-eyebrow">04 — Your dashboard</p>
+      <h2 class="section-title">Your CampusConnect dashboard</h2>
+      <p class="section-sub">A live snapshot of your profile, matches, saves and deadlines — it updates instantly as you
+        use the matcher above or save opportunities on the board.</p>
+
+      <div class="dash-stats">
+        <div class="dash-stat dash-stat-ring">
+          <div class="dash-ring" id="strengthRing" role="img" aria-label="Profile strength">
+            <div class="dash-ring-inner">
+              <b id="strengthValue">10%</b>
+            </div>
+          </div>
+          <p>Profile Strength</p>
+        </div>
+        <div class="dash-stat">
+          <b id="statMatched">0</b>
+          <p>Opportunities Matched</p>
+        </div>
+        <div class="dash-stat">
+          <b id="statSaved">0</b>
+          <p>Saved Opportunities</p>
+        </div>
+        <div class="dash-stat">
+          <b id="statDeadlines">0</b>
+          <p>Upcoming Deadlines</p>
+        </div>
+      </div>
+
+      <div class="dash-panel">
+        <div class="dash-tabs" role="tablist" aria-label="Dashboard views">
+          <button class="dash-tab active" data-tab="recommended" role="tab" aria-selected="true" id="tabRecommended"
+            aria-controls="dashContent">Recommended</button>
+          <button class="dash-tab" data-tab="saved" role="tab" aria-selected="false" id="tabSaved"
+            aria-controls="dashContent">Saved</button>
+          <button class="dash-tab" data-tab="deadlines" role="tab" aria-selected="false" id="tabDeadlines"
+            aria-controls="dashContent">Deadlines</button>
+        </div>
+        <div class="dash-content" id="dashContent" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIES ===================== -->
+  <section class="section section-paper" id="categories">
+    <div class="section-inner">
+      <p class="section-eyebrow">05 — Browse by lane</p>
+      <h2 class="section-title">Six lanes, one board</h2>
+      <p class="section-sub">Whatever direction you're exploring, there's a lane for it.</p>
+
+      <div class="cat-grid">
+        <div class="cat-card">
+          <span class="cat-icon">💻</span>
+          <h3>Technology</h3>
+          <p>Hackathons, dev internships and build-in-public challenges.</p>
+        </div>
+        <div class="cat-card">
+          <span class="cat-icon">🤖</span>
+          <h3>Artificial Intelligence</h3>
+          <p>ML internships, research programs and applied AI workshops.</p>
+        </div>
+        <div class="cat-card">
+          <span class="cat-icon">🚀</span>
+          <h3>Entrepreneurship</h3>
+          <p>Founder bootcamps, pitch competitions and startup fellowships.</p>
+        </div>
+        <div class="cat-card">
+          <span class="cat-icon">🎨</span>
+          <h3>Design</h3>
+          <p>UI/UX challenges, portfolio reviews and design-team internships.</p>
+        </div>
+        <div class="cat-card">
+          <span class="cat-icon">📊</span>
+          <h3>Business</h3>
+          <p>Case competitions, consulting tracks and analyst internships.</p>
+        </div>
+        <div class="cat-card">
+          <span class="cat-icon">🌍</span>
+          <h3>Social Impact</h3>
+          <p>Nonprofit projects, fellowships and community-driven programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="section section-ink" id="features">
+    <div class="section-inner">
+      <p class="section-eyebrow section-eyebrow-light">06 — What's included</p>
+      <h2 class="section-title section-title-light">Everything you need to find your next opportunity</h2>
+
+      <div class="feat-grid">
+        <div class="feat-card">
+          <span class="feat-icon">✦</span>
+          <h3>AI-powered recommendations</h3>
+          <p>A ranked feed built from your skills and goals, not a generic "trending" list.</p>
+        </div>
+        <div class="feat-card">
+          <span class="feat-icon">◈</span>
+          <h3>Personalized opportunity feed</h3>
+          <p>Your feed reshapes itself as your interests and applications change.</p>
+        </div>
+        <div class="feat-card">
+          <span class="feat-icon feat-icon-svg" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10.5" r="7.5" stroke="currentColor" stroke-width="1.6" />
+              <path d="M10 6v4.5l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M7 1.5h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+          </span>
+          <h3>Smart deadline reminders</h3>
+          <p>Get nudged before a deadline — not the morning after it's closed.</p>
+        </div>
+        <div class="feat-card">
+          <span class="feat-icon">▤</span>
+          <h3>Skill-based matching</h3>
+          <p>Every score is explained in plain language: here's exactly why it fits.</p>
+        </div>
+        <div class="feat-card">
+          <span class="feat-icon">☆</span>
+          <h3>Save &amp; track opportunities</h3>
+          <p>Shortlist what matters and track status from saved to applied to done.</p>
+        </div>
+        <div class="feat-card">
+          <span class="feat-icon">◎</span>
+          <h3>Discover communities &amp; events</h3>
+          <p>Find the clubs, cohorts and meetups your interests actually belong in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section section-paper stats-section" id="about">
+    <div class="section-inner">
+      <div class="stats-grid">
+        <div class="stat">
+          <b class="stat-num" data-target="10000" data-suffix="+">0</b>
+          <p>Students exploring opportunities</p>
+        </div>
+        <div class="stat">
+          <b class="stat-num" data-target="500" data-suffix="+">0</b>
+          <p>Opportunities listed</p>
+        </div>
+        <div class="stat">
+          <b class="stat-num" data-target="100" data-suffix="+">0</b>
+          <p>Partner communities</p>
+        </div>
+        <div class="stat">
+          <b class="stat-num" data-target="50" data-suffix="+">0</b>
+          <p>Events and hackathons</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section section-paper" id="testimonials">
+    <div class="section-inner">
+      <p class="section-eyebrow">07 — From students</p>
+      <h2 class="section-title">Proof it's not just another listings page</h2>
+
+      <div class="testi-grid">
+        <div class="testi-card">
+          <p>"CampusConnect AI helped me discover a hackathon that perfectly matched my AI skills. I ended up
+            participating and learning a lot from the experience."</p>
+          <div class="testi-person">
+            <span class="testi-avatar" style="background:#D7FF4E"></span>
+            <div><b>Aarav</b><span>Computer Science Student</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p>"I used to find out about internships after the deadline passed. Now the reminders catch me a week early —
+            I actually apply on time now."</p>
+          <div class="testi-person">
+            <span class="testi-avatar" style="background:#FF6452"></span>
+            <div><b>Meera</b><span>Design Student</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p>"The match reasons are what got me. It didn't just say 94% — it told me exactly which skills lined up, so I
+            knew where to focus my application."</p>
+          <div class="testi-person">
+            <span class="testi-avatar" style="background:#8CE0EF"></span>
+            <div><b>Rohan</b><span>Business &amp; Analytics Student</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="cta-final" id="get-started">
+    <div class="cta-inner">
+      <h2>Your next big opportunity could be one click away.</h2>
+      <p>Join CampusConnect AI and discover opportunities that match your skills, interests and ambitions.</p>
+      <div class="hero-actions" style="justify-content:center;">
+        <button type="button" class="btn btn-primary btn-lg" id="finalCtaBtn">Get Started Free</button>
+        <a href="#opportunities" class="btn btn-ghost-dark btn-lg">Explore Opportunities</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+              <circle cx="15" cy="15" r="13" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="15" cy="15" r="3.2" fill="currentColor" />
+              <path d="M15 2v6.5M15 21.5V28M28 15h-6.5M8.5 15H2" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="brand-word">CampusConnect<em>AI</em></span>
+        </a>
+        <p>The AI layer between you and every opportunity your campus doesn't email you about.</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Platform</h4>
+          <a href="#opportunities">Opportunities</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#features">Features</a>
+          <a href="#how">How It Works</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#testimonials">Stories</a>
+          <a href="#get-started">Get Started</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hello@campusconnect.ai">hello@campusconnect.ai</a>
+          <a href="mailto:hello@campusconnect.ai">Support</a>
+        </div>
+      </div>
+
+      <div class="footer-social" aria-label="Social media links">
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="GitHub">gh</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CampusConnect AI. Built for students, by students.</p>
+      <button type="button" class="footer-reset" id="resetDemoBtn">Reset demo data</button>
+    </div>
+  </footer>
+
+  <!-- ===================== ONBOARDING MODAL ===================== -->
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal" id="onboardingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div class="modal-progress" id="modalProgress" aria-hidden="true">
+          <span class="modal-step-dot active" data-dot="1"></span>
+          <span class="modal-step-dot" data-dot="2"></span>
+          <span class="modal-step-dot" data-dot="3"></span>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Close onboarding">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-step active" data-step-panel="1">
+          <p class="modal-eyebrow">Step 1 of 3</p>
+          <h3 id="modalTitle">What are you interested in?</h3>
+          <p class="modal-sub">Pick as many as apply — this shapes your feed.</p>
+          <div class="chip-select modal-chip-select" id="modalInterestChips" role="group"
+            aria-label="Select your interests"></div>
+        </div>
+
+        <div class="modal-step" data-step-panel="2">
+          <p class="modal-eyebrow">Step 2 of 3</p>
+          <h3>What skills do you bring?</h3>
+          <p class="modal-sub">We'll match these against every open listing on the board.</p>
+          <div class="chip-select modal-chip-select" id="modalSkillChips" role="group" aria-label="Select your skills">
+          </div>
+        </div>
+
+        <div class="modal-step" data-step-panel="3">
+          <p class="modal-eyebrow">Step 3 of 3</p>
+          <h3>Career goal &amp; experience</h3>
+          <p class="modal-sub">Last step — this fine-tunes how listings get ranked.</p>
+          <div class="modal-field">
+            <label for="modalGoalSelect">Career goal</label>
+            <select id="modalGoalSelect">
+              <option value="software-engineer">Software Engineer</option>
+              <option value="ai-researcher">AI / ML Researcher</option>
+              <option value="product-designer">Product Designer</option>
+              <option value="founder">Entrepreneur / Founder</option>
+              <option value="analyst">Business Analyst / Consultant</option>
+            </select>
+          </div>
+          <div class="modal-field">
+            <label for="modalLevelSelect">Experience level</label>
+            <select id="modalLevelSelect">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate" selected>Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="modal-step" data-step-panel="analyzing">
+          <div class="analyzing-state">
+            <div class="analyzing-spinner" aria-hidden="true"></div>
+            <p class="analyzing-text">Analyzing your profile...</p>
+            <p class="analyzing-sub">Analyzing opportunities based on your profile using our demo matching logic.</p>
+          </div>
+        </div>
+
+        <div class="modal-step" data-step-panel="results">
+          <p class="modal-eyebrow">Your matches</p>
+          <h3>Here's what fits you best</h3>
+          <div class="modal-results" id="modalResults"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer" id="modalFooter">
+        <button class="btn btn-ghost" id="modalBack" disabled>Back</button>
+        <button class="btn btn-primary" id="modalNext">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== OPPORTUNITY DETAILS MODAL ===================== -->
+  <div class="modal-overlay" id="detailsModalOverlay" hidden>
+    <div class="modal details-modal" id="detailsModal" role="dialog" aria-modal="true"
+      aria-labelledby="detailsModalTitle">
+      <div class="modal-head">
+        <span class="ticket-cat details-modal-cat" id="detailsModalCat"></span>
+        <button class="modal-close" id="detailsModalClose" aria-label="Close opportunity details">✕</button>
+      </div>
+
+      <div class="modal-body details-modal-body">
+        <h3 id="detailsModalTitle"></h3>
+
+        <div class="details-modal-meta">
+          <span id="detailsModalLoc"></span>
+          <span class="details-modal-dot" aria-hidden="true">·</span>
+          <span id="detailsModalDeadline"></span>
+        </div>
+
+        <div class="details-modal-match" id="detailsModalMatch" hidden>
+          <div class="details-modal-match-head">
+            <span>Match score</span>
+            <b id="detailsModalScore">0%</b>
+          </div>
+          <p class="details-modal-why"><strong>Why this matches you:</strong> <span id="detailsModalWhy"></span></p>
+        </div>
+
+        <p class="details-modal-desc" id="detailsModalDesc"></p>
+
+        <div class="details-modal-highlights" id="detailsModalHighlights"></div>
+
+        <div class="details-modal-tags" id="detailsModalTags" aria-label="Skills and tags"></div>
+      </div>
+
+      <div class="modal-footer details-modal-footer">
+        <button class="btn btn-ghost" id="detailsModalCloseBtn">Close</button>
+        <button class="btn btn-primary" id="detailsModalSaveBtn">
+          <span id="detailsModalSaveLabel">Save opportunity</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== TOAST NOTIFICATIONS ===================== -->
+  <div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
