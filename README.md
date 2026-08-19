@@ -60,6 +60,8 @@ Then navigate to `http://localhost:8000` in your browser.
 ```
 
 ---
+## For Live Deployed link:
+Use this: https://campus-connect-ai-one.vercel.app/
 
 ## 🤝 Contributing
 
